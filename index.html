@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- own css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="py-4">
+    <!-- book search  -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center mb-4 text-secondary">Search Book Library</h3>
+                    <div class="input-group mb-3 w-50 mx-auto">
+                        <input id="search-field" type="text" class="form-control input-field"
+                            placeholder="Search a book..." aria-label="Search a book" aria-describedby="button-addon2">
+                        <button onclick="searchBook()" class="btn button-addon2" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- book show -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="book-show">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- book search result -->
+    <section class="py-4">
+        <div class="container">
+            <div id="search-result" class="search-book  row row-cols-1 row-cols-md-3 g-4">
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!--work owner script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
